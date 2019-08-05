@@ -12,7 +12,7 @@
 		</pluralRanges>
 
 <!-- one, other -->
-		<pluralRanges locales="am as bn fr gu hi hy kn mr ps pt zu">
+		<pluralRanges locales="am as bn ccp fr gu hi hy kn mr ps pt zu">
 			<pluralRange start="one"   end="one"   result="one"/>
 			<pluralRange start="one"   end="other" result="other"/>
 			<pluralRange start="other" end="other" result="other"/>
