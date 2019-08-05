@@ -196,7 +196,7 @@ public abstract class PluralRulesFactory extends PluralRules.Factory {
 //                XPathParts parts = XPathParts.getFrozenInstance(path);
 //                String sample = cldrFile.getStringValue(path);
 //                String element = parts.getElement(-1);
-//                PluralType type = "pluralMinimalPairs".equals(element) ? PluralType.CARDINAL 
+//                PluralType type = "pluralMinimalPairs".equals(element) ? PluralType.CARDINAL
 //                    : "ordinalMinimalPairs".equals(element) ? PluralType.ORDINAL
 //                        : null;
 //                PluralInfo.Count category = PluralInfo.Count.valueOf(
@@ -219,7 +219,7 @@ public abstract class PluralRulesFactory extends PluralRules.Factory {
         <ordinalMinimalPairs ordinal="two">Take the {0}nd right.</ordinalMinimalPairs>
         </minimalPairs>
         </numbers>
-        
+
          */
 //        }
 
@@ -302,6 +302,7 @@ public abstract class PluralRulesFactory extends PluralRules.Factory {
     //        {"bg", "one: n is 1"},
     //        {"bn", "one: n is 1"},
     //        {"ca", "one: n is 1"},
+	  //			  {"ccp", "one: n is 1"},
     //        {"cs", "one: n is 1;  few: n in 2..4"},
     //        {"cy", "zero: n is 0;  one: n is 1;  two: n is 2;  few: n is 3;  many: n is 6"},
     //        {"da", "one: n is 1"},
@@ -409,6 +410,12 @@ public abstract class PluralRulesFactory extends PluralRules.Factory {
 //        { "bs", "other", "za {0} mjeseci" },
 //        { "ca", "one", "{0} dia" },
 //        { "ca", "other", "{0} dies" },
+//			  { "ccp", "one", "𑄖𑄬 {0} 𑄇𑄮 𑄃𑄛𑄬𑄣𑄴 𑄇𑄬𑄠𑄬, 𑄥𑄨𑄝𑄬 𑄉𑄧𑄟𑄴" },
+//			  { "ccp", "other", "𑄖𑄬 {0} 𑄝𑄬 𑄃𑄛𑄬𑄣𑄴 𑄇𑄬𑄠𑄬, 𑄥𑄨𑄉𑄪𑄚𑄴 𑄉𑄧𑄟𑄴" },
+//			   //      {"ccp", "", "{0} 𑄚𑄮 𑄃𑄛𑄬𑄣𑄴 𑄇𑄬𑄠𑄬, 𑄥𑄨𑄉𑄪𑄚𑄴 𑄉𑄧𑄟𑄴" },
+//			   //      {"ccp", "", "{0} 𑄝𑄮 𑄃𑄛𑄬𑄣𑄴 𑄇𑄬𑄠𑄬, 𑄥𑄨𑄉𑄪𑄚𑄴 𑄉𑄧𑄟𑄴" },
+//			   //      {"ccp", "", "{0} 𑄌𑄮 𑄃𑄛𑄬𑄣𑄴 𑄇𑄬𑄠𑄬, 𑄥𑄨𑄉𑄪𑄚𑄴 𑄉𑄧𑄟𑄴" },
+//			   //      {"ccp", "", "{0} 𑄖𑄮 𑄃𑄛𑄬𑄣𑄴 𑄇𑄬𑄠𑄬, 𑄥𑄨𑄉𑄪𑄚𑄴 𑄉𑄧𑄟𑄴" },
 //        { "cs", "few", "{0} dny" },
 //        { "cs", "one", "{0} den" },
 //        { "cs", "other", "{0} dní" },
@@ -597,7 +604,7 @@ public abstract class PluralRulesFactory extends PluralRules.Factory {
 //        { "pt", "one: n is 1 or f is 1" },
 //        { "si", "one: n in 0,1 or i is 0 and f is 1" },
 //        { "cs,sk", "one: j is 1;  few: j in 2..4; many: v is not 0" },
-//        //{"cy", "one: n is 1;  two: n is 2;  few: n is 3;  many: n is 6"},
+//        //{"cy,ccp", "one: n is 1;  two: n is 2;  few: n is 3;  many: n is 6"},
 //        //{"el", "one: j is 1 or i is 0 and f is 1"},
 //        { "da", "one: j is 1 or f is 1" },
 //        { "is", "one: j mod 10 is 1 and j mod 100 is not 11 or f mod 10 is 1 and f mod 100 is not 11" },
@@ -679,6 +686,10 @@ public abstract class PluralRulesFactory extends PluralRules.Factory {
 //        { "ca", "Agafa el {0}n a la dreta.", "2" },
 //        { "ca", "Agafa el {0}t a la dreta.", "4" },
 //        { "ca", "Agafa el {0}è a la dreta.", "5" },
+//			  { "ccp", "𑄔𑄬𑄚𑄬𑄘𑄨 {0} 𑄚𑄧𑄟𑄴𑄝𑄧𑄢𑄴 𑄝𑄇𑄧𑄇𑄮 𑄚𑄬𑄏", "1" },
+//			  { "ccp", "𑄔𑄬𑄚𑄬𑄘𑄨 {0} 𑄚𑄧𑄟𑄴𑄝𑄧𑄢𑄴 𑄝𑄇𑄧𑄇𑄮 𑄚𑄬𑄏", "2" },
+//			  { "ccp", "𑄔𑄬𑄚𑄬𑄘𑄨 {0} 𑄚𑄧𑄟𑄴𑄝𑄧𑄢𑄴 𑄝𑄇𑄧𑄇𑄮 𑄚𑄬𑄏", "3" },
+//			  { "ccp", "𑄔𑄬𑄚𑄬𑄘𑄨 {0} 𑄚𑄧𑄟𑄴𑄝𑄧𑄢𑄴 𑄝𑄇𑄧𑄇𑄮 𑄚𑄬𑄏", "4" },
 //        { "cs", "Na {0}. křižovatce odbočte vpravo.", "1" },
 //        { "da", "Tag den {0}. vej til højre.", "1" },
 //        { "de", "{0}. Abzweigung nach rechts nehmen", "1" },
